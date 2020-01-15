@@ -42,6 +42,26 @@ public class Calculator : MonoBehaviour
         Operator.text = operator1;
     }
 
+    public void multiplyNumbers()
+    {
+        string operator1 = "*";
+        float Var1 = float.Parse(number1.text);
+        float Var2 = float.Parse(number2.text);
+        float endResult = Var1 * Var2;
+        Result.text = endResult.ToString();
+        Operator.text = operator1;
+    }
+
+    public void divideNumbers()
+    {
+        string operator1 = "/";
+        float Var1 = float.Parse(number1.text);
+        float Var2 = float.Parse(number2.text);
+        float endResult = Var1 / Var2;
+        Result.text = endResult.ToString();
+        Operator.text = operator1;
+    }
+
     // Update is called once per frame
     void Update()
     {
