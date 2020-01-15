@@ -62,6 +62,16 @@ public class Calculator : MonoBehaviour
         Operator.text = operator1;
     }
 
+    public void pythagoras()
+    {
+        string operator1 = "py";
+        float Var1 = float.Parse(number1.text);
+        float Var2 = float.Parse(number2.text);
+        float endResult = ((Var1*Var1) + (Var2*Var2));
+        Result.text = endResult.ToString();
+        Operator.text = operator1;
+    }
+
     // Update is called once per frame
     void Update()
     {
