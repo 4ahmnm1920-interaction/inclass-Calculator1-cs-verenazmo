@@ -9,9 +9,9 @@ public class Exercise : MonoBehaviour
     void Start()
     {
         Function1();
-        Function2(3, 3);
-        Function3(1.4f, 3.1f);
-        Function4("Cooler", "Codierer");
+        Debug.Log(Function2(3, 2));
+        Debug.Log(Function3(1.4f, 3.1f));
+        Debug.Log(Function4("Cooler", "Codierer"));
     }
 
     public void Function1() 
@@ -21,19 +21,19 @@ public class Exercise : MonoBehaviour
         Debug.Log(number1 + number2);
     }
 
-    public void Function2(int verena, int maxl)
+    public int Function2(int verena, int maxl)
     {
-        Debug.Log(verena + maxl);
+        return (verena + maxl);
     }
 
-    public void Function3(float var1, float var2)
+    public float Function3(float var1, float var2)
     { 
-    Debug.Log(var1 + var2);
+        return(var1 + var2);
     }
 
-    public void Function4(string word1, string word2)
+    public string Function4(string word1, string word2)
     {
-        Debug.Log(word1 + " " + word2);
+        return(word1 + " " + word2);
     }
     // Update is called once per frame
     void Update()
