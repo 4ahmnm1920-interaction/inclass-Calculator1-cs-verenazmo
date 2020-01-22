@@ -1,9 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Exercise : MonoBehaviour
 {
+    public int Min1;
+    public int Max1;
+    public int Min2;
+    public int Max2;
 
     // Start is called before the first frame update
     void Start()
@@ -12,6 +17,7 @@ public class Exercise : MonoBehaviour
         Debug.Log(Function2(3, 2));
         Debug.Log(Function3(1.4f, 3.1f));
         Debug.Log(Function4("Cooler", "Codierer"));
+        
     }
 
     public void Function1() 
@@ -38,6 +44,6 @@ public class Exercise : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+    Debug.Log(Random.Range(Min1,Max1) + Random.Range(Min2,Max2));
     }
 }
