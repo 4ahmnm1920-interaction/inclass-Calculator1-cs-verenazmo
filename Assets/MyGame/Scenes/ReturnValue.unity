@@ -264,3 +264,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   condition: 0
+  text: 
+  text2: 
